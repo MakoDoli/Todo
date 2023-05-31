@@ -1,6 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 import mobdark from "../../public/assets/images/bg-mobile-dark.jpg";
 import moblight from "../../public/assets/images/bg-mobile-light.jpg";
+import desktopdark from "../../public/assets/images/bg-desktop-dark.jpg";
+import desktoplight from "../../public/assets/images/bg-desktop-light.jpg";
 
 export const GlobalStyles = createGlobalStyle`
     *{
@@ -22,10 +24,7 @@ export const GlobalStyles = createGlobalStyle`
         @media screen and (min-width: 768px) {
             
             background-image: ${(props) =>
-              props.theme
-                ? "url('../../public/assets/images/bg-desktop-dark.jpg')"
-                : "url('../../public/assets/images/bg-desktop-light.jpg')"} ;
-        }
+              props.theme ? `url(${desktopdark})` : `url(${desktoplight})`}
     }
-       
+}  
 `;
