@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { StyledContainer } from "./TodoContainer.styled";
 import ListItem from "./ListItem";
-import check from "../../assets/images/check.png";
-import empty from "../../assets/images/Oval.png";
+import check from "../../../public/assets/images/check.png";
+import empty from "../../../public/assets/images/Oval.png";
 
 interface Props {
   theme: boolean;

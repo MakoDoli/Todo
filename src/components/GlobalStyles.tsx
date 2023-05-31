@@ -9,8 +9,8 @@ export const GlobalStyles = createGlobalStyle`
     body {
         background-image: ${(props) =>
           props.theme
-            ? "url('./src/assets/images/bg-mobile-dark.jpg')"
-            : "url('./src/assets/images/bg-mobile-light.jpg')"} ; 
+            ? "url('../../public/assets/images/bg-mobile-dark.jpg')"
+            : "url('../../public/assets/images/bg-mobile-light.jpg')"} ; 
         background-color: ${(props) => (props.theme ? "#171823" : "#FAFAFA")};
         background-repeat: no-repeat;
         background-size: 100%;
@@ -23,12 +23,9 @@ export const GlobalStyles = createGlobalStyle`
             
             background-image: ${(props) =>
               props.theme
-                ? "url('/src/assets/images/bg-desktop-dark.jpg')"
-                : "url('/src/assets/images/bg-desktop-light.jpg')"} ;
+                ? "url('../../public/assets/images/bg-desktop-dark.jpg')"
+                : "url('../../public/assets/images/bg-desktop-light.jpg')"} ;
         }
     }
-    
-    h1{
-        color: red
-    }
+       
 `;

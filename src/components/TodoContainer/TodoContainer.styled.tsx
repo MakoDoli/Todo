@@ -26,7 +26,6 @@ export const StyledContainer = styled.main<{ mode: boolean }>`
     margin: 0 12px 0 20px;
     &:hover {
       background: linear-gradient(135deg, #55ddff 0%, #c058f3 100%);
-      /* background-image: url("../../assets/images/check.png"); */
     }
   }
   input {
