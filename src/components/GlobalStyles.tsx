@@ -1,4 +1,6 @@
 import { createGlobalStyle } from "styled-components";
+import mobdark from "../../public/assets/images/bg-mobile-dark.jpg";
+import moblight from "../../public/assets/images/bg-mobile-light.jpg";
 
 export const GlobalStyles = createGlobalStyle`
     *{
@@ -8,9 +10,7 @@ export const GlobalStyles = createGlobalStyle`
     }
     body {
         background-image: ${(props) =>
-          props.theme
-            ? "url('../../public/assets/images/bg-mobile-dark.jpg')"
-            : "url('../../public/assets/images/bg-mobile-light.jpg')"} ; 
+          props.theme ? `url( ${mobdark} )` : `url(${moblight})`};
         background-color: ${(props) => (props.theme ? "#171823" : "#FAFAFA")};
         background-repeat: no-repeat;
         background-size: 100%;
