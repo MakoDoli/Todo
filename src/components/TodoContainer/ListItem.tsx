@@ -6,11 +6,12 @@ interface Props {
   handler: () => void;
   handleRemove: () => void;
   style: string;
+  isDragging: boolean;
 }
 
 export default function ListItem(props: Props) {
   return (
-    <div className="item">
+    <div className="item" style={{ opacity: props.isDragging ? 0.5 : 1 }}>
       <div className="single">
         <img
           onClick={props.handler}

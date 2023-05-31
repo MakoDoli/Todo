@@ -62,7 +62,7 @@ export const StyledContainer = styled.main<{ mode: boolean }>`
     width: 327px;
     height: 52px;
     background: ${(props) => (props.mode ? "#25273d" : "white")};
-
+    cursor: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -87,10 +87,14 @@ export const StyledContainer = styled.main<{ mode: boolean }>`
     }
     .tick.crossed {
       display: block;
+      cursor: pointer;
     }
     .crossed {
       text-decoration-line: line-through;
       color: ${(props) => (props.mode ? "#4D5067" : "#D1D2DA")};
+    }
+    .checked {
+      cursor: pointer;
     }
     .single {
       display: flex;
@@ -146,5 +150,15 @@ export const StyledContainer = styled.main<{ mode: boolean }>`
     .list-container {
       width: 540px;
     }
+  }
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    font-family: "Josefin Sans";
+    font-style: normal;
+    text-align: center;
+    letter-spacing: -0.194444px;
+    color: ${(props) => (props.mode ? "#5B5E7E;" : "#9495a5")};
   }
 `;
